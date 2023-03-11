@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './SearchPage.css';
 
 const SearchPage = () => {
-  const API_KEY = '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';
+  const API_KEY = `${process.env.REACT_APP_OPEN_AI_KEY}`;
   const URL = 'https://api.openai.com/v1/completions';
   const [search, setSearch] = useState('');
   const [result, setResult] = useState('');
